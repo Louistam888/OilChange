@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do I need an oil change?</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+
+<body>
+  <section class="h1Section">
+    <div class="wrapper">
+      <h1>Do I need an oil change?</h1>
+  </div>
+  </section>
+  
+  <!--FORM SECTION-->
+  <section class="formSection"> 
+    <div class="wrapper">
+      <form action="#" method="post" name="oilChangeForm">
+        <label for="odoLastOilChange" placeholder="kms">What was your odometer reading in kilometres when you last got your oil changed?</label>
+          <input type="number" id="odoStart" name="oilChange" required>
+          <label for="odoCurrent" placeholder="kms">What is your odometer reading in kilometres now?</label>
+
+          <input type="number" id="odoEnd" name="oilChange" required>
+          <label for="lastOilType">Which type of oil is currently in your car?</label>
+
+          <select id="lastOilType" name="oilChange" required>
+          <option value disabled selected>Please choose an option</option>
+          <option value="synthetic">Synthetic</option>
+          <option value="conventional">Conventional (non-synthetic) </option>
+          <option value="noIdea">I have no idea</option>
+          </select>
+<!--BUTTONS-->
+            <div class="buttonContainer">
+              <button type="submit" class="submitButton">Submit</button>
+              <button type="reset" class="resetButton">Reset</button> 
+            </div>
+      </form>
+    </div>
+  </section>
+
+<!--ANSWER SECTION-->
+  <section class="answerSection">
+    <div class="answer">
+      <p class="oilChangeStatus"></p> 
+        <div class="answerExplanation">
+          <p class="remaining"></p>
+          <p class="nextChange"></p>
+        </div>
+    </div> 
+  </section>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+

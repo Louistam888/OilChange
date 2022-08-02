@@ -1,0 +1,239 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;
+       font-size: 62.5%;
+       font-family: arial;
+      }
+       
+
+*, *:before, *:after {box-sizing: inherit}
+
+/*****************/
+/* GENERAL STYLES*/
+/*****************/
+
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: rgb(241, 102, 102);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  letter-spacing: 5px;
+}
+
+
+/**************/
+/* FORM STYLES*/
+/**************/
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.h1Section {
+  background-color: rgb(253, 209, 14);
+  padding: 10px 0;
+}
+.formSection {
+  background-color: rgba(72, 118, 179, 0.575);
+  padding: 10px 0;
+}
+
+label, input, select, .submitButton, .resetButton {
+  margin: 2.5px 0;
+  font-size: 2.5rem;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  text-shadow: -0.5px -0.5px 0 whitesmoke, 0.5px -0.5px 0 whitesmoke, -0.5px 0.5px 0 whitesmoke, 0.5px 0.5px 0 whitesmoke;
+  letter-spacing: 0.5px;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submitButton, .resetButton {
+  width: 20%;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+  margin: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.submitButton {
+  background: rgba(8, 141, 19, 0.829);
+}
+
+.resetButton {
+  background: rgba(255, 0, 0, 0.753);
+}
+
+
+/*****************/
+/* ANSWER STYLES*/
+/*****************/
+
+.answerSection {
+  background-color: rgb(253, 209, 14);
+  height: 30vh;
+  padding: 10px 0;
+}
+
+.answer {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+}
+
+.answerExplanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.oilChangeStatus {
+  font-size: 20rem;
+  text-transform: uppercase;
+  width: 30%;
+  margin-right: 60px;
+  text-align: right;
+  color: rgba(71, 140, 231, 0.774);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.remaining {
+  margin: 0;
+  padding-right: 10px;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: -0.5px -0.5px 0 whitesmoke, 0.5px -0.5px 0 whitesmoke, -0.5px 0.5px 0 whitesmoke, 0.5px 0.5px 0 whitesmoke;
+  white-space: pre-wrap;
+}
+
+.nextChange {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 10rem;
+  color: rgb(241, 102, 102);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+ .remaining, .nextChange {
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+    
+/****************/
+/* MEDIA QUERIES*/
+/****************/
+
+@media (max-width: 1200px) {
+
+  .answerSection {
+    background-color: rgb(253, 209, 14);
+    height: auto;
+    padding: 0;
+  }
+
+  .answer {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .oilChangeStatus {
+    font-size: 15rem;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: rgba(71, 140, 231, 0.774);
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  }
+
+  .answerExplanation {
+    width: 100%;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .remaining, .nextChange {
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .buttonContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  .submitButton, .resetButton {
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+  }
+
+  form {
+    padding-bottom: 10px;
+  }
+
+  label, input, select, .submitButton, .resetButton {
+    font-size: 2rem;
+  }
+
+  label {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .oilChangeStatus {
+    font-size: 10rem;
+  }
+
+  .nextChange {
+    font-size: 5rem;
+    padding: 10px;
+  }
+}
